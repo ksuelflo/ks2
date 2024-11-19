@@ -1,0 +1,17 @@
+{
+  "hash": "acba2d31d5963401edcbd95edb2b2151",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data Science Project Visualizations\"\necho: false\nfreeze: auto\nexecute: \n    warning: false \n    message: false\nformat: \n    html: \n        code-fold: true\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](data_visualizations_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](data_visualizations_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](data_visualizations_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "data_visualizations_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

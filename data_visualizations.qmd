@@ -1,0 +1,42 @@
+---
+title: "Data Science Project Visualizations"
+echo: false
+freeze: auto
+execute: 
+    warning: false 
+    message: false
+format: 
+    html: 
+        code-fold: true
+---
+
+
+```{r}
+library(tidyverse)
+homes <- read_csv("https://mac-stat.github.io/data/homes.csv")
+```
+
+```{r}
+#Histogram
+homes%>%
+  ggplot(aes(x = Price))+
+  geom_histogram()+
+  labs(title = "Price Distribution of Homes", x = "Price")
+```
+
+```{r}
+#Barplot
+homes%>%
+  ggplot(aes(x = Fuel.Type))+
+  geom_bar()+
+  scale_y_continuous(limits = c(0, 1500))
+```
+
+```{r}
+#Scatterplot
+homes%>%
+  ggplot(aes(x = Age, y = Price, color = Central.Air, shape = as.factor(Fuel.Type)))+
+  geom_point()+
+  labs(color = "Has Central Air Conditioning?", shape = "Type of Fuel")
+```
+
